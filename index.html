@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibrahim</title>
+  <meta name="description" content="Ibrahim — mathematics student building machine learning, data science, and embedded systems projects." />
+  <style>
+    :root {
+      --bg: #060606;
+      --text: #d7cfbf;
+      --muted: #aba292;
+      --faint: #7b756c;
+      --link: #8eb6ff;
+      --link-hover: #bcd2ff;
+      --max: 560px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "IBM Plex Mono", "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: var(--link); text-underline-offset: 0.18em; }
+    a:hover, a:focus-visible { color: var(--link-hover); }
+    .skip-link {
+      position: absolute;
+      left: 12px;
+      top: -44px;
+      background: #ffffff;
+      color: #000000;
+      padding: 10px 12px;
+      border-radius: 8px;
+      z-index: 20;
+    }
+    .skip-link:focus { top: 12px; }
+    .wrap {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 36px 20px;
+    }
+    main {
+      width: min(100%, var(--max));
+    }
+    h1 {
+      margin: 0 0 20px;
+      font-size: clamp(1rem, 0.96rem + 0.24vw, 1.12rem);
+      font-weight: 700;
+    }
+    p {
+      margin: 0 0 12px;
+      font-size: clamp(0.92rem, 0.9rem + 0.14vw, 0.99rem);
+      max-width: 65ch;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 20px;
+      font-size: 0.93rem;
+    }
+    .links a { color: var(--muted); }
+    .links a:hover, .links a:focus-visible { color: var(--text); }
+    .foot {
+      margin-top: 26px;
+      color: var(--faint);
+      font-size: 0.84rem;
+    }
+    @media (max-width: 640px) {
+      .wrap { place-items: start; padding-top: 16vh; }
+      main { width: min(100%, 92vw); }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="wrap">
+    <main id="content">
+      <h1>ibrahim</h1>
+
+      <p>
+        i'm a mathematics student at the university of manchester, focused on machine learning,
+        data science, and building practical systems from solid mathematical foundations.
+      </p>
+
+      <p>
+        i'm especially interested in <a href="https://github.com/yourusername?tab=repositories" target="_blank" rel="noopener noreferrer">machine learning projects</a>,
+        quantitative modelling, and embedded work that bridges software with hardware.
+      </p>
+
+      <p>
+        recently i've been working across data analysis, automation, and low-level experimentation,
+        with an emphasis on projects that are technically interesting and useful in practice.
+      </p>
+
+      <p>
+        this site is a small home for my work, notes, and future writing.
+      </p>
+
+      <nav class="links" aria-label="Profile links">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github</a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">linkedin</a>
+        <a href="mailto:yourname@email.com">email</a>
+        <a href="./cv.pdf" target="_blank" rel="noopener noreferrer">cv</a>
+      </nav>
+
+      <p class="foot">replace the placeholder usernames, email, and cv file before publishing.</p>
+    </main>
+  </div>
+</body>
+</html>
