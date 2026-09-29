@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ibrahim</title>
-  <meta name="description" content="Ibrahim — mathematics student building machine learning, data science, and embedded systems projects." />
+  <meta name="description" content="Ibrahim Kashif, mathematics student at the University of Manchester working on machine learning, data science and mathematical modelling." />
   <style>
     :root {
       --bg: #060606;
@@ -68,6 +68,21 @@
     }
     .links a { color: var(--muted); }
     .links a:hover, .links a:focus-visible { color: var(--text); }
+    h2 {
+      margin: 34px 0 10px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .item { margin: 0 0 16px; }
+    .item p { margin: 0; }
+    .item .meta { color: var(--faint); font-size: 0.86rem; }
+    ul.plain { list-style: none; padding: 0; margin: 0 0 8px; font-size: 0.92rem; }
+    ul.plain li { color: var(--muted); }
+    details { margin: 0 0 10px; }
+    summary { cursor: pointer; color: var(--muted); font-size: 0.93rem; }
+    summary:hover, summary:focus-visible { color: var(--text); }
+    details[open] summary { margin-bottom: 6px; }
     .foot {
       margin-top: 26px;
       color: var(--faint);
@@ -85,29 +100,100 @@
       <h1>ibrahim</h1>
 
       <p>
-        i'm a mathematics student at the university of manchester, focused on machine learning,
-        data science, and building practical systems from solid mathematical foundations.
+        i'm a final-year mathematics student at the university of manchester,
+        working on mathematical modelling, statistics, and machine learning.
       </p>
 
       <p>
-        i'm especially interested in machine learning projects,
-        quantitative modelling, and embedded work that bridges software with hardware.
+        i'm most interested in modelling real systems: numerical methods,
+        simulation, and data-driven prediction, where the maths has to hold
+        up against real data.
       </p>
 
       <p>
-        recently i've been working across data analysis, automation, and low-level experimentation,
-        with an emphasis on machine learning projects that are technically interesting and useful in practice.
+        recently that has meant regression and machine learning projects in
+        r and python, and this year, modules in machine learning, medical
+        statistics, and scientific computing in c++ and matlab.
       </p>
 
       <p>
         this site is a small home for my work, notes, and future writing.
       </p>
 
+      <h2>education</h2>
+      <div class="item">
+        <p>bsc mathematics, university of manchester</p>
+        <p class="meta">2024 to 2027 &middot; 73% average, on track for first-class honours</p>
+      </div>
+
+      <h2>projects</h2>
+      <div class="item">
+        <p>california housing price prediction</p>
+        <p class="meta">python, pandas, scikit-learn &middot; end-to-end machine learning workflow; cross-validated random forest regressor, rmse of $41,423</p>
+      </div>
+      <div class="item">
+        <p>quadratic regression analysis</p>
+        <p class="meta">r, ggplot2 &middot; modelled launch angle against distance, r&sup2; = 0.9812; checked with residual plots, cook's distance and the shapiro-wilk test before using it to predict</p>
+      </div>
+      <div class="item">
+        <p><a href="./assets/quaternions.pdf" target="_blank" rel="noopener noreferrer">properties and applications of quaternions</a></p>
+        <p class="meta">latex &middot; co-authored report covering quaternion algebra, 3d rotations and gimbal lock, a quaternion proof of lagrange's four-square theorem, and the octonions; 90% for the report, 90% for the presentation</p>
+      </div>
+      <div class="item">
+        <p>c.u.b.o., autonomous rubik's cube solver</p>
+        <p class="meta">python, electronics &middot; robotics society; wrote the python controlling the servos and worked across programming, electronics and mechanical design</p>
+      </div>
+      <div class="item">
+        <p>clustering techniques on medical data</p>
+        <p class="meta">final-year project, in progress &middot; applying clustering techniques to medical data</p>
+      </div>
+
+      <h2>modules</h2>
+      <details>
+        <summary>year 3 (2026/27, in progress)</summary>
+        <ul class="plain">
+          <li>mathematics and applications of machine learning</li>
+          <li>statistical machine learning</li>
+          <li>multivariate statistics and machine learning</li>
+          <li>medical statistics</li>
+          <li>scientific computing (c++)</li>
+          <li>problem solving by computer (matlab)</li>
+          <li>complex analysis and applications</li>
+        </ul>
+      </details>
+      <details>
+        <summary>year 2 (2025/26)</summary>
+        <ul class="plain">
+          <li>mathematical modelling</li>
+          <li>fluid mechanics</li>
+          <li>partial differential equations and vector calculus</li>
+          <li>numerical analysis 1</li>
+          <li>programming with python</li>
+          <li>linear regression models</li>
+          <li>probability and statistics 2</li>
+          <li>stochastic processes</li>
+          <li>introduction to financial mathematics</li>
+          <li>mathematical communication and group projects</li>
+        </ul>
+      </details>
+      <details>
+        <summary>year 1 (2024/25)</summary>
+        <ul class="plain">
+          <li>linear algebra</li>
+          <li>real analysis</li>
+          <li>mathematical foundations and analysis</li>
+          <li>mathematical problem solving</li>
+          <li>introduction to vector calculus</li>
+          <li>ordinary differential equations and applications</li>
+          <li>probability i</li>
+          <li>statistics i</li>
+        </ul>
+      </details>
+
       <nav class="links" aria-label="Profile links">
         <a href="https://github.com/Ibrahim-Kashif" target="_blank" rel="noopener noreferrer">github</a>
         <a href="https://www.linkedin.com/in/ibrahim-kashif216/" target="_blank" rel="noopener noreferrer">linkedin</a>
         <a href="mailto:ibrahim.kashif216@gmail.com">email</a>
-        <a href="./assets/Ibrahim_Kashif_resume__web_.pdf" target="_blank" rel="noopener noreferrer">cv</a>
       </nav>
 
       <p class="foot"></p>
