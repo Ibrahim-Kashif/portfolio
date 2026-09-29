@@ -88,15 +88,32 @@
       color: var(--faint);
       font-size: 0.84rem;
     }
+    .cols > section > h2:first-child { margin-top: 0; }
+    @media (min-width: 900px) {
+      main { width: min(100%, 1040px); }
+      .cols {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+        gap: 72px;
+        align-items: start;
+      }
+      .side { position: sticky; top: 48px; }
+      .side h2 { margin-top: 26px; }
+      .wrap { place-items: start center; padding: 48px 32px; }
+    }
+    @media (max-width: 899px) {
+      .cols > section + section { margin-top: 34px; }
+    }
     @media (max-width: 640px) {
-      .wrap { place-items: start; padding-top: 16vh; }
+      .wrap { place-items: start; padding-top: 10vh; }
       main { width: min(100%, 92vw); }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <main id="content">
+    <main id="content" class="cols">
+      <section class="side">
       <h1>ibrahim</h1>
 
       <p>
@@ -126,6 +143,14 @@
         <p class="meta">2024 to 2027 &middot; 73% average, on track for first-class honours</p>
       </div>
 
+      <nav class="links" aria-label="Profile links">
+        <a href="https://github.com/Ibrahim-Kashif" target="_blank" rel="noopener noreferrer">github</a>
+        <a href="https://www.linkedin.com/in/ibrahim-kashif216/" target="_blank" rel="noopener noreferrer">linkedin</a>
+        <a href="mailto:ibrahim.kashif216@gmail.com">email</a>
+      </nav>
+      </section>
+
+      <section>
       <h2>projects</h2>
       <div class="item">
         <p>california housing price prediction</p>
@@ -189,14 +214,7 @@
           <li>statistics i</li>
         </ul>
       </details>
-
-      <nav class="links" aria-label="Profile links">
-        <a href="https://github.com/Ibrahim-Kashif" target="_blank" rel="noopener noreferrer">github</a>
-        <a href="https://www.linkedin.com/in/ibrahim-kashif216/" target="_blank" rel="noopener noreferrer">linkedin</a>
-        <a href="mailto:ibrahim.kashif216@gmail.com">email</a>
-      </nav>
-
-      <p class="foot"></p>
+      </section>
     </main>
   </div>
 </body>
